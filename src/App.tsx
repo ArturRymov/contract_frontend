@@ -23,7 +23,7 @@ function App() {
   const { connected } = useTonConnect()
 
   const showAlert = () => {
-    WebApp.showAlert("Нажми меня");
+    WebApp.showAlert("Нажми меня");}
   return (
     <div>
       <div>

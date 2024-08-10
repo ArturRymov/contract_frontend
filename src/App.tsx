@@ -5,7 +5,7 @@ import { useTonConnect } from "./hooks/useTonConnect";
 import {fromNano} from "ton-core";
 import WebApp from "@twa-dev/sdk";
 
-WebApp.showAlert("Нажми меня")
+WebApp.showAlert("Show alert")
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
   const { connected } = useTonConnect()
 
   const showAlert = () => {
-    WebApp.showAlert("Нажми меня");}
+    WebApp.showAlert("Show alert");}
   return (
     <div>
       <div>
@@ -48,7 +48,7 @@ function App() {
                 onClick={() => {
                   showAlert();
                 }}
-              >
+              > Show alert
               </a>
             <br/>
         {connected && (
@@ -57,7 +57,7 @@ function App() {
                   sendIncrement();
                 }}
               >
-                Show alert
+                Add Increment at 5
               </a>
             )}
             <br/>
